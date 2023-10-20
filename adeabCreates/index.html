@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الشرقية تُبدع</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+            <section class="ideaCenter">
+              <div id="createIdea">
+                <div class="card">
+                  <form id="post-form">
+                    <h1 class="titleForm"> 📝خذ الطبشور واكتب فكرتك</h1>
+      
+                    <div class="input">
+                      <input id="ideaTitle" onblur="requiredField(this)" type="text" placeholder="عنوان الفكرة" >
+                      <span>عنوان الفكرة</span>
+                    </div>
+      
+                    <div class="input">
+                      <textarea id="idea" onblur="requiredField(this)" placeholder="عسى هالمساحة تكفي كمية إبداعك؟" ></textarea>
+                      <span>الفكرة الرهيبة</span>
+                    </div>
+      
+                    <div class="input">
+                      <input id="image" accept="images/*" onblur="requiredField(this)" type="file" >
+                      <span>ارفع الصورة التقريبية للفكرة</span>
+                      <label id="progress"></label>
+                    </div>
+      
+                    <div class="input">
+                      <input id="ideaOwner" onblur="requiredField(this)" placeholder="اسمك يـ مُبدع" >
+                      <span>صاحب الفكرة</span>
+                    </div>
+                
+                    <div class="text-center">
+                      <button type="button" class="btn btn-success" onclick="upload()">شاركنا الفكرة يا أدِيب</button>
+                    </div>
+                  </form>
+               </div>         
+               <a href="#createIdea" id="openIdea">خذ الطبشور واكتب فكرتك</a>
+              </div>
+            </section>
+            
+               <div id="posts"></div>
+
+
+
+            <h6 class="vis"><span>(beta)</span> الأصدار 2.1.0 </h6>
+
+
+
+
+
+
+
+            <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
+
+            <script>
+              // Your web app's Firebase configuration
+              var firebaseConfig = {
+                apiKey: "AIzaSyBoqwWYN5lBPhPfuYYPHVCKU1F4xAzFE34",
+                authDomain: "blogs-d2fb2.firebaseapp.com",
+                databaseURL: "https://blogs-d2fb2-default-rtdb.firebaseio.com",
+                projectId: "blogs-d2fb2",
+                storageBucket: "blogs-d2fb2.appspot.com",
+                messagingSenderId: "207423750300",
+                appId: "1:207423750300:web:45502dd418112f5f28ed59",
+                measurementId: "G-BW5XG8JWHD"
+              };
+              // Initialize Firebase
+              firebase.initializeApp(firebaseConfig);
+              firebase.analytics();
+            </script>
+
+
+
+
+
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script><script  src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

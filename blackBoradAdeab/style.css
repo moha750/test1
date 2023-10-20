@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: r;
+  src: url(../fonts/r.ttf);
+}
+
+@font-face {
+  font-family: b;
+  src: url(../fonts/b.ttf);
+}
+
+body {
+  background-image: url(../imgs/blackboradBG.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+  font-family: b;
+  font-size: 10vw;
+}
+
+section {
+  margin: 10vw;
+}
+
+section img {
+  width: 40vw;
+  border-radius: 5vw;
+}
+
+h6 {
+  color: white;
+  font-family: b;
+}

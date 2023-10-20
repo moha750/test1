@@ -1,0 +1,217 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: b;
+  src: url(../fonts/b.ttf);
+}
+
+@font-face {
+  font-family: r;
+  src: url(../fonts/b.ttf);
+}
+
+body {
+  background-image: url(../imgs/blackboradBG.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ideaCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#createIdea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	position: absolute;
+  top: -115vw;
+  height: 140vw;
+  width: 90vw;
+  font-size: 24px;
+  background: #ffffff;
+  cursor: pointer;
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+}
+
+#openIdea {
+	position: absolute;
+  bottom: -20px;
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: rgb(255, 255, 255);
+  color: #3b5d4c;
+  font-size: 4vw;
+  text-decoration: none;
+  font-family: b;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.titleForm {
+  font-family: r;
+  font-size: 6vw;
+  color: #3b5d4c;
+}
+
+.input{
+  position:relative;
+  margin: 0.3vw 0vw;
+}
+
+.input span{
+  position:absolute;
+  right:0;
+  top:0px;
+  font-size:13px;
+  background-color: white;
+  color:#aaaaaa;
+  font-family: r;
+}
+
+input{
+  background-color: white;
+  width:70vw;
+  height:8vw;
+  border:none;
+  outline:none;
+  padding:0 10px;
+  box-sizing:border-box;
+  font-size:3.3vw;       
+  border-radius:5px;
+  margin-top: 16px;
+  text-align: right;
+  color: #3b5d4c;
+  font-family: b;
+  border-top: 1.8px solid #3b5d4c;
+  border-right: 1.8px solid #3b5d4c;
+  border-left: 1.8px solid #3b5d4c;
+  border-bottom: 4px solid #3b5d4c;
+  transition: 1s;
+}
+
+textarea {
+width:70vw;
+height:40vw;
+border:none;
+outline:none;
+padding:0 10px;
+box-sizing:border-box;
+font-size:3.3vw;
+border-radius:5px;
+margin-top: 16px;
+text-align: right;
+color: #3b5d4c;
+font-family: b;
+border-top: 1.8px solid #3b5d4c;
+border-right: 1.8px solid #3b5d4c;
+border-left: 1.8px solid #3b5d4c;
+border-bottom: 4px solid #3b5d4c;
+transition: 1s;
+}
+
+::placeholder{
+  color:rgba(59, 93, 76, 0.5)
+}
+
+button{
+  height:30px;
+  width:40vw;
+  background-color:hsla(150, 22%, 30%, 0.9);
+  font-size:16px;
+  color:#fff;
+  border-radius:5px;
+  cursor:pointer;
+  transition:all 0.5s;
+  border: none;
+  font-family: b;
+  margin: 15px 0px 12px 0px;
+}
+
+button:hover {
+  background-color:#3b5d4c;
+}
+
+.bar {
+  height: 50px;
+  width: 500px;
+  background-color: #aaaaaa;
+}
+
+.progress {
+  background-color: #3b5d4c;
+  height: 100%;
+  width: 5%;
+}
+
+.uploadPercentage {
+  font-size: 25px;
+  color: black;
+}
+
+#posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70vw;
+  margin: 0vw auto;
+  margin-top: 20vw;
+}
+
+.postTitle {
+  color: #fff;
+  font-family: b;
+  font-size: 6vw;
+}
+
+.postBody {
+  color: #fff;
+  font-family: b;
+  font-size: 4vw;
+  padding: 3vw;
+}
+
+.postOwner {
+  color: #fff;
+  font-family: r;
+  font-size: 3vw;
+}
+
+.img {
+  width: 24vw;
+}
+
+.hr {
+  width: 70vw;
+  margin: 0vw auto;
+  margin: 4vw;
+
+}
+
+/* .card-body {
+} */
+
+/* .hr {
+
+} */
+
+
+
+.vis {
+  color: #fff;
+  text-align: center;
+  font-family: b;
+}
